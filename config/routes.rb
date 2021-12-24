@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
+  get 'chats/show'
 	devise_for :users, controllers: {
     sessions: "public/sessions",
     registrations: "public/registrations"
   }
 
+  get 'chat/:id', to: 'chats#show', as: 'chat'
+  resources :chats, only: [:create]
+  
   resources :users,only: [:show,:edit,:update,:index] do
     member do
       get 'followers'
