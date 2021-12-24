@@ -70,3 +70,5 @@ gem 'jquery-rails'
 gem "dotenv-rails"
 
 gem 'byebug'
+
+gem 'impressionist', '~>1.6.1'
