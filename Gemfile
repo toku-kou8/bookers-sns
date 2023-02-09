@@ -68,7 +68,14 @@ gem 'bootstrap-sass'
 gem 'jquery-rails'
 
 gem "dotenv-rails"
+gem 'dotenv-rails'
+group :production do
+  gem 'mysql2'
+end
 
 gem 'byebug'
 
 gem 'impressionist', '~>1.6.1'
+gem "net-smtp"
+gem "net-pop"
+gem "net-imap"

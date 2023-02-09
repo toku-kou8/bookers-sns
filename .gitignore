@@ -72,3 +72,7 @@ yarn-debug.log*
 
 # End of https://www.gitignore.io/api/rails
 .DS_Store
+
+/.env
+# Ignore master key for decrypting credentials and more.
+/config/master.key
